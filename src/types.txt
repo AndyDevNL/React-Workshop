@@ -1,0 +1,23 @@
+interface DataRecord {
+    'meta-data': {
+      date: string;
+      latitude: number;
+      longitude: number;
+      time: string;
+    };
+    'sensor-data': {
+      humidity: number;
+      temperature: number;
+      windspeed: number;
+    };
+    'student-data': {
+        address: string;
+        'first-name': string;
+        'last-name': string;
+        'student-number': string;
+    };
+  }
+
+interface ComponentDataRecordState {
+    values:DataRecord[];
+}
